@@ -85,7 +85,7 @@
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_Navigate_To_WIDetails" sap:VirtualizedContainerService.HintSize="1728,614" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_Navigate_To_WIDetails" sap:VirtualizedContainerService.HintSize="1745,881.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="workitem_URL" />
     </Sequence.Variables>
@@ -94,7 +94,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser - System 1 Dashboard" sap:VirtualizedContainerService.HintSize="502,461" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="e49f09b8b592dd39a6f842ee7bdcef71" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser - System 1 Dashboard" sap:VirtualizedContainerService.HintSize="502,461" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="e49f09b8b592dd39a6f842ee7bdcef71" Selector="[string.Format(&quot;&lt;html app='msedge.exe' url='{0}*' /&gt;&quot;, in_System1URL)]">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
