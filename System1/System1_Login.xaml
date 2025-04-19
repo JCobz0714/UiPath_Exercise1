@@ -230,7 +230,7 @@
           </Sequence>
         </ui:CommentOut.Body>
       </ui:CommentOut>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Open browser Edge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1058,1519" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="6f06acef-73c0-42fb-b766-61c00811af3e" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Open browser Edge" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1058,1519" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6f06acef-73c0-42fb-b766-61c00811af3e" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>

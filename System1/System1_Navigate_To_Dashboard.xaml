@@ -165,7 +165,7 @@
         </Sequence>
       </ui:CommentOut.Body>
     </ui:CommentOut>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge ACME System 1 - Vendors - Search" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,949" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2e83db04-8bd1-4fda-99bf-49732e7bcef4" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge ACME System 1 - Vendors - Search" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,949" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="2e83db04-8bd1-4fda-99bf-49732e7bcef4" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
