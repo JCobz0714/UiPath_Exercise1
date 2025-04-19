@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AgaJqkFiMUCDLdWYtZQikw" Reference="7IAH_dP-i0-rtk9wYnBMiA/mlz_1XWtA0K_FxtV_XJSRg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sha1-online.com" CVScreenId="28cb71a2-b87f-4a35-9550-12add2961a6a" CvElementArea="1145, 575, 60, 28" CvTextArea="1155, 580, 41, 16" CvTextArgument="hash" CvType="Button" DesignTimeRectangle="1148, 577, 57, 26" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='' aaname='hash' check:text='hash' /&gt;" Guid="b65bf2a1-cb88-4b13-aadd-e67aa45dd27a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SHA1 online' /&gt;&lt;webctrl tag='INPUT' type='submit' aaname='hash' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="28cb71a2-b87f-4a35-9550-12add2961a6a" CvElementArea="733, 575, 413, 28" CvType="InputBox" DesignTimeRectangle="733, 577, 415, 26" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='textToHashId' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="b69ab542-8b51-44ac-8331-75f47ddb83bb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="57238b2085914235a90ef9b2ce86b8cf.png" xmlns="">03HVwae1phUOlaplb3mBqxA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

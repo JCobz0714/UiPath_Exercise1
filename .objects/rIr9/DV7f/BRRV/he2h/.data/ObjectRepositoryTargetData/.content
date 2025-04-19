@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WNdiQpyUDUqt3q5TYjIWXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sha1-online.com" CVScreenId="3f287f79-7da9-42ff-8d19-f44b711410fd" CvElementArea="1887, 17, 24, 24" CvType="CloseButton" DesignTimeRectangle="1871, 9, 58, 43" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl name='SHA1 online - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='SHA1 online - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="d514843d-844d-4e79-bc61-3f3f8b47aca2" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='SHA1 online - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3f287f79-7da9-42ff-8d19-f44b711410fd" CvElementArea="1829, 17, 25, 26" CvType="MaximizeButton" DesignTimeRectangle="1814, 9, 58, 43" ElementType="Button" FullSelectorArgument="&lt;ctrl name='SHA1 online - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='SHA1 online - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' automationid='' check:text='Restore' /&gt;" Guid="0324d095-62ac-4a6a-93bf-317e5237e569" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fb6bb8bddff2b6ae4a5a3122bc1a7b44.png" xmlns="">0gXdWaAw5KUKv54tydRR23A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

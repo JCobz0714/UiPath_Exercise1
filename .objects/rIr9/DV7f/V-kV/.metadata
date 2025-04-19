@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge SHA1 online - Personal - Microsoft​ Edge",
+  "Type": "Screen",
+  "Id": "V-kVgCYNXUi6QAgcEZ5xHw",
+  "Reference": "7IAH_dP-i0-rtk9wYnBMiA/V-kVgCYNXUi6QAgcEZ5xHw",
+  "ParentRef": "7IAH_dP-i0-rtk9wYnBMiA/DV7f4L0ppE6KdeK2BSZqjw",
+  "Created": "2025-04-19T03:46:17.3140524Z",
+  "Updated": "2025-04-19T03:46:17.3140524Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1TjVTt1BNECFk-5-oVe8Cw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sha1-online.com" CVScreenId="ec6432de-b0e1-4c29-b67e-08c9843a7f18" CvElementArea="733, 575, 413, 28" CvType="InputBox" DesignTimeRectangle="733, 577, 415, 26" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='textToHashId' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="5e5b1c2b-63eb-4664-a7ba-d624444489d1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SHA1 online' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ec6432de-b0e1-4c29-b67e-08c9843a7f18" CvTextArea="579, 519, 778, 33" CvTextArgument="SHA1 and other hash functions online generator" CvType="Text" DesignTimeRectangle="497, 516, 945, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='SHA1 and other hash functions online generator' check:innerText='SHA1 and other hash functions online generator' /&gt;" Guid="91501f18-ab34-4f91-bcd3-b2a670c3f3a3" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4414ee46e15f6616e1d4789c091c7c44.png" xmlns="">0heWi08eFr0qAhxKjmyap9w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SHA1_Close" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="SHA1_Close_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SHA1_Close" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="SHA1_Close_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -73,28 +73,79 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SHA1_Close" sap:VirtualizedContainerService.HintSize="1670,885.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SHA1_Close" sap:VirtualizedContainerService.HintSize="912.0000000000001,992" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser - SHA1 Online" sap:VirtualizedContainerService.HintSize="484,278" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="10e9bfa1410021a18fb031b247d21282" Selector="&lt;html app='msedge.exe' title='SHA1 online' /&gt;">
-      <ui:BrowserScope.Body>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="552,448.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="516.8,338.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser - SHA1 Online" sap:VirtualizedContainerService.HintSize="483.2,278.4" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="10e9bfa1410021a18fb031b247d21282" Selector="&lt;html app='msedge.exe' title='SHA1 online' /&gt;">
+            <ui:BrowserScope.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+                </Sequence>
+              </ActivityAction>
+            </ui:BrowserScope.Body>
+          </ui:BrowserScope>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge SHA1 online" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="552,520" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="f7ef43be-168b-46a2-ab13-29e5d60e2dfc" Version="V2">
+      <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,280" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f7ef43be-168b-46a2-ab13-29e5d60e2dfc" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="sha1-online.com" CVScreenId="3f287f79-7da9-42ff-8d19-f44b711410fd" ContentHash="WNdiQpyUDUqt3q5TYjIWXg" CvElementArea="1887, 17, 24, 24" CvType="CloseButton" DesignTimeRectangle="1871, 9, 58, 43" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl name='SHA1 online - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='SHA1 online - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="d514843d-844d-4e79-bc61-3f3f8b47aca2" InformativeScreenshot="fb6bb8bddff2b6ae4a5a3122bc1a7b44.png" Reference="7IAH_dP-i0-rtk9wYnBMiA/he2hMjo-mkupA86W8Ys2iQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='SHA1 online - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="3f287f79-7da9-42ff-8d19-f44b711410fd" CvElementArea="1829, 17, 25, 26" CvType="MaximizeButton" DesignTimeRectangle="1814, 9, 58, 43" ElementType="Button" FullSelectorArgument="&lt;ctrl name='SHA1 online - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='SHA1 online - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' automationid='' check:text='Restore' /&gt;" Guid="0324d095-62ac-4a6a-93bf-317e5237e569" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
           </Sequence>
         </ActivityAction>
-      </ui:BrowserScope.Body>
-    </ui:BrowserScope>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Edge" ContentHash="KBGhKm2M00a0DcEqaPeqnQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABmSURBVDhPrczRDYAgDIRhH5nAFdx/B1zGJTBHcqY2FNrqw5ejCfm369wblaOG9QAevwWwJD9ahgG5K8sAlnBrroBcLRzAEu5UQO6nAKQDFAoQbnIHLNMA8fOIGfB6BUh/mnkCObXdA5Q5fU2oWVYAAAAASUVORK5CYII=" InformativeScreenshot="e62ad00a7201eb95ac3e0761c451eca9.jpg" Reference="7IAH_dP-i0-rtk9wYnBMiA/BRRVrJL5NE6SU-pnXY7m3g" Selector="&lt;html app='msedge.exe' title='SHA1 online' /&gt;" Url="http://www.sha1-online.com/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
