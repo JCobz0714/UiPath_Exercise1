@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="System1_ExtractClientInformation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="System1_ExtractClientInformation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="out_ClientID" Type="OutArgument(x:String)" />
     <x:Property Name="out_ClientName" Type="OutArgument(x:String)" />
@@ -102,21 +102,92 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System1_ExtractClientInformation" sap:VirtualizedContainerService.HintSize="1745,881.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System1_ExtractClientInformation" sap:VirtualizedContainerService.HintSize="1653,1722" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser - Work item details page" sap:VirtualizedContainerService.HintSize="502,702" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0a98aba9690de8330d864366c046b8fa" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;">
-      <ui:BrowserScope.Body>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="572,873" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="536,762" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser - Work item details page" sap:VirtualizedContainerService.HintSize="502,702" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0a98aba9690de8330d864366c046b8fa" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;">
+            <ui:BrowserScope.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,532" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="ClientInformation" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text - Client information" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                    <ui:GetValue.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="30e8d948-957a-4702-94dd-90f6b34c9b23" InformativeScreenshot="6f3756cb19eac955ae6f47bc0b573e75" Selector="&lt;webctrl tag='P' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetValue.Target>
+                    <ui:GetValue.Value>
+                      <OutArgument x:TypeArguments="x:String">[ClientInformation]</OutArgument>
+                    </ui:GetValue.Value>
+                  </ui:GetValue>
+                  <Assign DisplayName="Assign - Client ID" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[out_ClientID]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[ClientInformation.Substring(ClientInformation.IndexOf("Client ID:") + "Client ID: ".Length).Split(Environment.NewLine.ToCharArray)(0)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign DisplayName="Assign - Client ID" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[out_ClientName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[ClientInformation.Substring(ClientInformation.IndexOf("Client Name:") + "Client Name: ".Length).Split(Environment.NewLine.ToCharArray)(0)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign DisplayName="Assign - Client ID" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[out_ClientCountry]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[ClientInformation.Substring(ClientInformation.IndexOf("Client Country:") + "Client Country: ".Length).Split(Environment.NewLine.ToCharArray)(0)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ActivityAction>
+            </ui:BrowserScope.Body>
+          </ui:BrowserScope>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge ACME System 1 - Work Items" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="572,826" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0e8a9209-2391-4e8a-8d5b-84a63df1b1d4" Version="V2">
+      <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,532" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,586" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="ClientInformation" />
             </Sequence.Variables>
@@ -125,22 +196,18 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text - Client information" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="GetValue_1">
-              <ui:GetValue.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="30e8d948-957a-4702-94dd-90f6b34c9b23" InformativeScreenshot="6f3756cb19eac955ae6f47bc0b573e75" Selector="&lt;webctrl tag='P' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:GetValue.Target>
-              <ui:GetValue.Value>
-                <OutArgument x:TypeArguments="x:String">[ClientInformation]</OutArgument>
-              </ui:GetValue.Value>
-            </ui:GetValue>
-            <Assign DisplayName="Assign - Client ID" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <uix:NGetText DisplayName="Get Text 'Client Information Deta…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="0e8a9209-2391-4e8a-8d5b-84a63df1b1d4" TextString="[ClientInformation]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/105851415" ContentHash="vMCXqVUKE0CHW2Zj6191rg" DesignTimeRectangle="499, 493, 373, 60" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='                              EQ75283                              Kizzie Kohen                              Italy                         ' /&gt;" Guid="8b27e601-b39b-4638-800e-bf7e57a0294a" InformativeScreenshot="02bb3ee3facd780a37dd34811f4911ed.png" Reference="7IAH_dP-i0-rtk9wYnBMiA/8M_3YpTnLUyUsTukE-6WtA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;&lt;webctrl tag='P' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c2678dbf-4edf-43c3-8bf1-cf1b3f40301c" CvTextArea="498, 464, 202, 16" CvTextArgument="Client Information Details" CvType="Text" DesignTimeRectangle="499, 464, 373, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H4' type='' class='' aaname='Client Information Details' check:innerText='Client Information Details' /&gt;" Guid="414b29fb-83c6-4e21-9090-ac9f6b1a58d3" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Assign DisplayName="Assign - Client ID" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_5">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[out_ClientID]</OutArgument>
               </Assign.To>
@@ -148,7 +215,7 @@
                 <InArgument x:TypeArguments="x:String">[ClientInformation.Substring(ClientInformation.IndexOf("Client ID:") + "Client ID: ".Length).Split(Environment.NewLine.ToCharArray)(0)]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Assign - Client ID" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign DisplayName="Assign - Client ID" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[out_ClientName]</OutArgument>
               </Assign.To>
@@ -156,7 +223,7 @@
                 <InArgument x:TypeArguments="x:String">[ClientInformation.Substring(ClientInformation.IndexOf("Client Name:") + "Client Name: ".Length).Split(Environment.NewLine.ToCharArray)(0)]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Assign - Client ID" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign DisplayName="Assign - Client ID" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_7">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[out_ClientCountry]</OutArgument>
               </Assign.To>
@@ -166,7 +233,10 @@
             </Assign>
           </Sequence>
         </ActivityAction>
-      </ui:BrowserScope.Body>
-    </ui:BrowserScope>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1928, -8, 1936, 1048" BrowserType="Edge" ContentHash="JHK98yHOIkeh0zLXJ2eesg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAShSURBVFhHvdd7TFNXHAfw3wbr7NQ94hLnGImTbOJI/GeaZX9sYXMbM5mL8Q/3z2RGk4mbZhth5SVCebT1AmXjoZY9NAiCzJDoyPbHImAVevu6t71t54CWRxYqdEBFnCYE+C3nXm+53NBOsPWPb8gp9/T3yem55wGgYYZBw9wGDTP1iENqDgFoGAyljMS+0I567EIN6WegYYKhhtqGkG9GOGaJTfJJzAJCx9ecIIAp0DL8P9MueFsN3Pi+3Kv+jOwVRuyb1enPyDMKIW1Vlz9DS48dyOwYKYFSO0IxP9KTAoCIjltwT9vgDgM3DrlX/ZC9woh9szr9kGcUQtqqLj9o6THI7BgBxQkW4bgVQSsFFFvx3Wbv0VgDfnRObIkngCI5oMiKO1t9X0YLMDozv2lbras7tcVrkAIMzPirYQFpUQIg4vNxOgfCF0aEQ0Y81j16WQTozWPhAR/9sgBIrHPXKyknA2ob836rr1peSMzWn/4yQrHN+nSlk4srZQ6Svl0376bDwU6EKg7h624EHYsioMIcCA/YdXEBoCx33IUiG0K2Cbed7Q3IC4tJqHUj5JgQSmwIavuZ+wBI+uEGwpFrfNp8U+plA57RcyYosSPkmfHNxr4r8sJiNp3yzPLvtsaOz33HFUoAUNA5sieHDrzW5psKzYHTkebAIkAlZ5YAOuWFJYB58gwBrC53FskAkEMHYOzfucdEQL1jInYAhY4NATae9KCyxIZPUSwm1rmrREADNxllwGnPnAhQSkZgrd6J8K2JX4IVlIMSAU3u6ANCIyAFJNa5EQos/Ob2QrWrSAQ0RhuQFAbwEnk7CKDUjuu/XwHgWf0DA5b8CVYE+FgCWHXCYeF3rXwzbm/o65AXFpNc75nhAVp+r1c/FEC6Eq7VO91QbENQmXBHi/d3eWExiScXCq2udJY/FODt894Q4LPfhi/DNz0IWT34RlO/X15YTDzl5LdyyKaxmgkcFgEv1qwA8FbjAuCMZ/IQv5SSTSXfjL23Z16WF59H3Aq5NFmC+ddt6M7MBhGwvtq1fMB7LYsAoKxwIORahIcLrZh/7eb+cksgufnP4JacrhEVv1eUMghHruPrjX23hu7M8H0jjUBDJMCHku2YANr/nj4Mn14RzotkPmTTqKhwCu0sk3CGJEU+N2JwDj+QAhLJHCA/TZkdN1S7Cx9oBJYAwCftw3bI7EH4qlvoRHY+csAstCL5XKG24r4/RqjgHIIUAFoW4eh1fhJDKVMnApo9ywdA+8D09r1tA7+uoxy4hmIxXsdigp6bTr80eG743qxi+N4syAHvnO+/lVTjmt1s8GBqk1clAs5yETajCADY2zYA6ygHrKFYiNexkKDnIP3SIJDiYQCQVOOCzQYPpDZ5Q9vxKSYCIK3VFzqUxgrws2MiOSxgZ6tv1yMAwJPUUsfyAgvuvjhQduFGcGOVJZBSTi8ORQdSKulAis40yrcrl3jm/1LL/PMKRY/tjicTVG0NXUyEq1kZg3FaFldRDnxcyyIZpmjnCTL0GlZYO4TrIH81ExrkrkauS+T1IrpYRPxu2eW0nx8KDRPgo73/NxZZ/N2kZu9/PqMYP3lO0UYAAAAASUVORK5CYII=" InformativeScreenshot="570469e596d3a0b85eb45befad5a809d.jpg" Reference="7IAH_dP-i0-rtk9wYnBMiA/gIwifHPXwkic3jsKEB0eHg" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" Url="https://acme-test.uipath.com/work-items/105851415" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>

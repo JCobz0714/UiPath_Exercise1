@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7betXMhfvUOOD2OXFmeOXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/login" CVScreenId="22ab533a-eb25-4a92-b4fc-b984302a71b6" CvElementArea="1895, 15, 20, 19" CvType="CloseButton" DesignTimeRectangle="1882, 8, 46, 34" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='ACME System 1 - Log In - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ACME System 1 - Log In - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="b482b1ba-87de-4c9f-8d33-d5877997163a" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Log In - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="22ab533a-eb25-4a92-b4fc-b984302a71b6" CvElementArea="1849, 15, 20, 20" CvType="MaximizeButton" DesignTimeRectangle="1836, 8, 46, 34" ElementType="Button" FullSelectorArgument="&lt;ctrl name='ACME System 1 - Log In - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ACME System 1 - Log In - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Restore' role='push button' automationid='' check:text='Restore' /&gt;" Guid="2631ff15-d97d-4726-b488-945be0ec343b" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="43c61f7556efc544a2725753b951ef5f.png" xmlns="">0US3V9JQsa0KYlCGB3N4VDQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

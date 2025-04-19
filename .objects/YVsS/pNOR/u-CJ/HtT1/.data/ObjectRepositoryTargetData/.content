@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EjQohYuWH0inOBPO3sMGnw" Reference="7IAH_dP-i0-rtk9wYnBMiA/HtT1esUZuE-U77WcA8vj5A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/work-items/update/105851415" CVScreenId="8b85c321-8c40-4e66-9078-361ca64c97fc" CvElementArea="425, 7, 19, 18" CvType="CloseButton" DesignTimeRectangle="412, 1, 46, 31" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='ACME System 1 - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ACME System 1 - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="8386be5f-7863-4557-b5ea-f4e0b4887283" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Personal - Microsoft​ Edge' /&gt;&lt;ctrl name='ACME System 1 - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8b85c321-8c40-4e66-9078-361ca64c97fc" CvElementArea="379, 6, 20, 19" CvType="MaximizeButton" DesignTimeRectangle="366, 1, 46, 31" ElementType="Button" FullSelectorArgument="&lt;ctrl name='ACME System 1 - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Maximize' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='ACME System 1 - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Maximize' role='push button' automationid='' check:text='Maximize' /&gt;" Guid="59854e6c-5a00-4ea0-8fa4-b4ff15f6e4d6" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="681ba2d2fd8c281e290dd8da6fc4531e.png" xmlns="">0vh8Ul3zuuUClceQvEWhzQA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fKB0EyWy_0GZsV5w1A-Pgg" Reference="7IAH_dP-i0-rtk9wYnBMiA/YG8DCNJ56EKfE_wWqp_Waw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/login" CVScreenId="57026707-5350-402a-b009-b4cc25c4e5be" CvElementArea="466, 457, 488, 38" CvType="InputBox" DesignTimeRectangle="468, 459, 485, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ' aaname='Email:' /&gt;" Guid="da3d1494-e62c-41c4-a93c-f49259e61846" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' idx='*' /&gt;&lt;webctrl id='email' tag='INPUT' type='email' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="57026707-5350-402a-b009-b4cc25c4e5be" CvTextArea="467, 437, 43, 13" CvTextArgument="Email:" CvType="Text" DesignTimeRectangle="468, 434, 42, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Email:' check:innerText='Email:' /&gt;" Guid="8fc46088-c6a9-41da-b64e-8de6734b484e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bcd57eefcf41dca7a84bc903d851b1ce.png" xmlns="">0u0mw7AdMz06C57zTY2tn2Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

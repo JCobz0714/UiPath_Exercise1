@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vMCXqVUKE0CHW2Zj6191rg" Reference="7IAH_dP-i0-rtk9wYnBMiA/8M_3YpTnLUyUsTukE-6WtA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/work-items/105851415" DesignTimeRectangle="499, 493, 373, 60" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='                              EQ75283                              Kizzie Kohen                              Italy                         ' /&gt;" Guid="8b27e601-b39b-4638-800e-bf7e57a0294a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;&lt;webctrl tag='P' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c2678dbf-4edf-43c3-8bf1-cf1b3f40301c" CvTextArea="498, 464, 202, 16" CvTextArgument="Client Information Details" CvType="Text" DesignTimeRectangle="499, 464, 373, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H4' type='' class='' aaname='Client Information Details' check:innerText='Client Information Details' /&gt;" Guid="414b29fb-83c6-4e21-9090-ac9f6b1a58d3" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="02bb3ee3facd780a37dd34811f4911ed.png" xmlns="">0VakGz38F_kuNZ2NJiTfKbA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

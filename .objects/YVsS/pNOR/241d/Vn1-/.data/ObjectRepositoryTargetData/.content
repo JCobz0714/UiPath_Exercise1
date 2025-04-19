@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="J5cYkg3VA0qUFWOBPOlPug" Reference="7IAH_dP-i0-rtk9wYnBMiA/Vn1-URX6ZESVzpW9z4y3UQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com" CVScreenId="6e1ff671-6dde-4864-b3c5-055fe9f84292" CvTextArea="390, 254, 177, 31" CvTextArgument="Dashboard" CvType="Text" DesignTimeRectangle="391, 251, 1140, 50" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='page-header' aaname='                                                 Dashboard                                     ' check:innerText='Dashboard' /&gt;" Guid="4f02e173-bdf6-49db-80e5-e6e7f7c298fe" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;&lt;webctrl tag='H1' class='page-header' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="6e1ff671-6dde-4864-b3c5-055fe9f84292" CvTextArea="388, 177, 133, 16" CvTextArgument="ACME System 1" CvType="Text" DesignTimeRectangle="376, 161, 162, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='navbar-brand' aaname='ACME System 1' check:innerText='ACME System 1' /&gt;" Guid="d5d0870f-d7bf-4b05-b550-ac0cf13e952c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="32e2e7966d00b6f5dbceb84959b21ab8.png" xmlns="">0z8Ma44zqWU2evrYSQhs2Mw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

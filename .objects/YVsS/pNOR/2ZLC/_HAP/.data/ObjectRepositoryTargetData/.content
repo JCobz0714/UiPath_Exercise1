@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EeJB3LEwU023yOdmUZnasg" Reference="7IAH_dP-i0-rtk9wYnBMiA/_HAPPgXL1kKUeNMVpRGL9A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/work-items/105851415" CVScreenId="83931c19-28c4-4c0d-89c3-5ba9b99fa71e" CvElementArea="900, 603, 161, 37" CvTextArea="933, 614, 113, 16" CvTextArgument="Update Work Item" CvType="Button" DesignTimeRectangle="902, 604, 157, 34" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname=' Update Work Item' tag='BUTTON' type='button' class='btn btn-default' check:innerText='Update Work Item' /&gt;" Guid="eab456de-5afb-43c0-9f2a-bb2f8450b1c7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="902, 494, 374, 80" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='' aaname='                              105851415                              Calculate Client Security Hash                              Open                              2023-05-10                         ' check:innerText='WIID: 105851415&amp;#xA;Type: Calculate Client Security Hash&amp;#xA;Status: Open&amp;#xA;Date: 2023-05-10' /&gt;" Guid="bea64c50-773e-453d-8670-3662c14a8728" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0416ce406034c8f4540e7bf89abfa5e2.png" xmlns="">0ch3Bhqd-IkeeHV4PQSDxZQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

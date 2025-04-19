@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iym_goYR6Uad2RxAnPi00Q" Reference="7IAH_dP-i0-rtk9wYnBMiA/5TdfYEqV-EaqDuoPyutJqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com" CVScreenId="fb7b9db0-158d-4c45-ae95-79a93f9b75d9" CvTextArea="390, 255, 177, 31" CvTextArgument="Dashboard" CvType="Text" DesignTimeRectangle="391, 252, 1140, 50" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='page-header' aaname='                                                 Dashboard                                     ' check:innerText='Dashboard' /&gt;" Guid="ae855378-5689-43f9-8bc6-83e9d6d45a82" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='msedge.exe' url='{0}*' /&gt;&lt;webctrl tag='H1' class='page-header' innertext='                                                 Dashboard                                     ' /&gt;&quot;, in_System1URL)]" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="fb7b9db0-158d-4c45-ae95-79a93f9b75d9" CvTextArea="388, 178, 133, 16" CvTextArgument="ACME System 1" CvType="Text" DesignTimeRectangle="376, 162, 162, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='navbar-brand' aaname='ACME System 1' check:innerText='ACME System 1' /&gt;" Guid="16dd36d1-33cd-4350-8446-eae21d502b6c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4b997ede93a94f97743752ad0256e1df.png" xmlns="">00GdX-UvaU0qjJkBv2BojgQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="in_System1URL" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
